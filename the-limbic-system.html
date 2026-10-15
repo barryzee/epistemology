@@ -7,6 +7,23 @@
 		<title>
 		</title>
 		<link rel="stylesheet" type="text/css" href="1791976389_the-limbic-system/styles.css" media="all" />
+
+		<style>
+        .video-container {
+            /* Ensures the video stays in the normal layout flow */
+            display: block; 
+            width: 100%;
+            max-width: 640px; /* Limits the size on larger screens */
+            margin: 20px auto; /* Adds spacing above/below and centers it */
+        }
+
+        video {
+            width: 100%; /* Makes the video responsive inside its container */
+            height: auto; /* Maintains the correct aspect ratio */
+            display: block; /* Removes unwanted bottom whitespace */
+        }
+    </style>
+		
 	</head>
 	<body>
 		<div class="wcdiv wcpage" style="width:612pt; height:792pt;">
@@ -689,12 +706,12 @@
 						</div>
 					</a>
 
-					<div class="video-wrapper">
-						<video width="640" height="360" controls poster="thumbnail.jpg">
-  							<source src="https://barryzee.github.io/carburetor4.mp4" type="video/mp4">
-  							Your browser does not support the video tag.
-						</video>
-					</div>
+					<div class="video-container">
+        				<video controls>
+            				<source src="https://barryzee.github.io/carburetor4.mp4" type="video/mp4">
+            				Your browser does not support the video tag.
+        				</video>
+    				</div>
 					
 
 					
